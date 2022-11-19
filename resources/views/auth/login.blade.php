@@ -74,8 +74,8 @@
                             <div class="thinborder-ontop">
                                 <h3>Login Info</h3>
                                 <x-jet-validation-errors class="mb-4" />
-                                <form id="userloginform" method="POST" accept="{{route('login')}}">  
-                                    @csrf                                      
+                                <form id="userloginform" method="POST" accept="{{route('login')}}">
+                                    @csrf
                                     <div class="form-group row">
                                         <label for="email" class="col-sm-4 col-form-label text-md-right">E-Mail Address</label>
                                         <div class="col-md-6">
@@ -106,14 +106,14 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>                                
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-3 col-md-3 profile1">
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="section-twitter">
             <i class="fa fa-twitter icon-big"></i>
             <div class="container">
@@ -124,7 +124,9 @@
                     </div>
                 </div>
             </div>
-        </div>           
+        </div>
     </section>
 
 </x-base-layout>
+
+

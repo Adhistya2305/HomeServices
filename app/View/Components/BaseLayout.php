@@ -13,6 +13,6 @@ class BaseLayout extends Component
      */
     public function render()
     {
-        return view('layouts.Base');
+        return view('layouts.base');
     }
 }
