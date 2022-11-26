@@ -26,7 +26,7 @@ class ServiceCategorySeeder extends Seeder
                 "slug" => "beauty",
                 "image" => "1521969358.png"
             ],
-            
+
             [
                 "name" => "Plumbing",
                 "slug" => "plumbing",
@@ -118,7 +118,7 @@ class ServiceCategorySeeder extends Seeder
                 "image" => "1521972643.png"
             ],
 
-            
+
 
 
         ]);
