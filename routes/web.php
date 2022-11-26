@@ -40,7 +40,6 @@ Route::middleware(['auth:sanctum','verified','authsprovider'])->group(function()
     Route::get('/sprovider/dashboard',SproviderDashboardComponent::class)->name('sprovider.dashboard');
 });
 
-
 //for admin
 Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
