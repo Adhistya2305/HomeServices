@@ -39,7 +39,7 @@
                                         <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
                                         
                                     @endif
-                                    <form class="form-horizontal" wire:submit.prevent="createNewCategory">
+                                    <form class="form-horizontal" wire:submit.prevent="addNewSlide">
                                         @csrf
                                         <div class="form-group">
 
