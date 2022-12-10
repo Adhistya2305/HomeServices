@@ -70,7 +70,7 @@
                             <li><a href="service-details/ac-repair.html">Repair</a></li>
                         </ul>
                     </li>--}}
-                    
+
                     <li> <a href="#">Appliances</a>
                         <ul class="drop-down one-column hover-fade">
                             <li><a href="servicesbycategory/11.html">Computer Repair</a></li>
@@ -303,6 +303,7 @@
                 $('#logout-form').submit();
             });
         });
+    </script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
             jQuery('.tp-banner').show().revolution({
