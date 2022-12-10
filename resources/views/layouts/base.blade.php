@@ -27,15 +27,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="visible-md visible-lg text-left">
-                            <li><a href="tel:+911234567890"><i class="fa fa-phone"></i> +91-1234567890</a></li>
-                            <li><a href="mailto:contact@surfsidemedia.in"><i class="fa fa-envelope"></i>
-                                    contact@surfsidemedia.in</a></li>
+                            <li><a href="tel:+6282134931073"><i class="fa fa-phone"></i> +6282134931073</a></li>
+                            <li><a href="mailto:kelompok3@gmail.com"><i class="fa fa-envelope"></i>
+                                    kelompok3@gmail.com</a></li>
                         </ul>
                         <ul class="visible-xs visible-sm">
-                            <li class="text-left"><a href="tel:+911234567890"><i class="fa fa-phone"></i>
-                                    +91-1234567890</a></li>
+                            <li class="text-left"><a href="tel:+6282134931073"><i class="fa fa-phone"></i>
+                                    +6282134931073</a></li>
                             <li class="text-right"><a href="index.php/changelocation.html"><i
-                                        class="fa fa-map-marker"></i> Faridabad, Haryana</a></li>
+                                        class="fa fa-map-marker"></i>Jl Yanglurus, Tegal, Jawa Tengah</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -55,7 +55,7 @@
 
                 <ul class="collapse">
                     <li class="title">
-                        <a href="index.php.html"><img src="images/logo.png"></a>
+                        <a href="{{route('home')}}"><img src="{{asset('images/logo.png')}}"></a>
                     </li>
                     <li> <a href="{{route('home.service_categories')}}">Service Categories</a>
 
@@ -130,6 +130,9 @@
                                     <ul class="drop-down one-column hover-fade">
                                         <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
                                         <li><a href="{{route('admin.service_categories')}}">Service Categories</a></li>
+                                        <li><a href="{{route('admin.all_services')}}">All Services</a></li>
+                                        <li><a href="{{route('admin.slider')}}">Manage Slider</a></li>
+
                                         <li><a id="logout" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit(); ">Logout</a></li>
 
                                     </ul>
@@ -211,14 +214,14 @@
                         <h3>CONTACT US</h3>
                         <ul class="contact_footer">
                             <li class="location">
-                                <i class="fa fa-map-marker"></i> <a href="#"> Faridabad, Haryana, India</a>
+                                <i class="fa fa-map-marker"></i> <a href="#">jl yanglurus, Tegal, Jawa Tengah </a>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i> <a
-                                    href="mailto:contact@surfsidemedia.in">contact@surfsidemedia.in</a>
+                                    href="mailto:kelompok3@gmail.com">kelompok3@gmail.com</a>
                             </li>
                             <li>
-                                <i class="fa fa-headphones"></i> <a href="tel:+911234567890">+91-1234567890</a>
+                                <i class="fa fa-headphones"></i> <a href="tel:+6282134931073">082134931073</a>
                             </li>
                         </ul>
                         <h3 style="margin-top: 10px">FOLLOW US</h3>
@@ -234,14 +237,14 @@
                         <h3 class="mlist-h">CONTACT US</h3>
                         <ul class="contact_footer mlist">
                             <li class="location">
-                                <i class="fa fa-map-marker"></i> <a href="#"> Faridabad, Haryana, India</a>
+                                <i class="fa fa-map-marker"></i> <a href="#"> jl yanglurus, Tegal, Jawa Tengah</a>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i> <a
-                                    href="mailto:contact@surfsidemedia.in">contact@surfsidemedia.in</a>
+                                    href="mailto:kelompok3@gmail.com">kelompok3@gmail.com</a>
                             </li>
                             <li>
-                                <i class="fa fa-phone"></i> <a href="tel:+911234567890">+91-1234567890</a>
+                                <i class="fa fa-phone"></i> <a href="tel:+6282134931073">082134931073</a>
                             </li>
                         </ul>
                         <ul class="social mlist-h">
@@ -265,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <p class="text-xs-center crtext">&copy; 2021 SurfsideMedia. All Rights Reserved.</p>
+                            <p class="text-xs-center crtext">&copy; 2022 kelompok 3, Team hore. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -311,13 +314,15 @@
                 delay: 5000,
                 startwidth: 1170,
                 startheight: 480,
-                minHeight: 250,
+                minHeight: 850,
                 navigationType: "none",
                 navigationArrows: "solo",
-                navigationStyle: "preview1"
+                navigationStyle: "preview1",
+                paddingBottom: 500,
             });
         });
     </script>
+    @stack('scripts')
     @livewireScripts
 </body>
 </html>

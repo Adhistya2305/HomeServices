@@ -53,7 +53,9 @@
                                                 <th>Image</th>
                                                 <th>Name</th>
                                                 <th>Slug</th>
+                                                <th>featured</th>
                                                 <th>Action</th>
+                                               
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -62,8 +64,20 @@
                                                     <td>{{$scategory->id}}</td>
                                                     <td><img src="{{asset('images/categories')}}/{{$scategory->image}}" width="60" /></td>
                                                     <td>{{$scategory->name}}</td>
+                                                    
+
                                                     <td>{{$scategory->slug}}</td>
+                                                    
                                                     <td>
+                                                        @if ($scategory->featured)
+                                                            Yes
+                                                        @else
+                                                            No
+                                                        @endif
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="{{route('admin.services_by_category',['category_slug'=>$scategory->slug])}}" style="margin-right: 10px;"><i class="fa fa-list fa-2x text-info"></i></a>
                                                         <a href="{{route('admin.edit_service_category',['category_id'=>$scategory->id])}}"><i class="fa fa-edit fa-2x text-info"></i></a>
                                                         <a href="#" onclick="confirm('Apakah Kamu Yakin, Kamu Akan Mengapus Data Kategori Servis!') || event.stopImmediatePropagation() " wire:click.prevent="deleteServiceCategory({{$scategory->id}})" style="margin-left: 10px;"><i class="fa fa-times fa-2x text-danger"></i>
                                                         </a>
